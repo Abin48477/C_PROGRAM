@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    int *p = &num;
+
+    printf("Before change:\n");
+    printf("num = %d\n", num);
+
+    *p = 99;  // change value using pointer!
+
+    printf("After change:\n");
+    printf("num = %d\n", num);  // now num is changed to 99
+
+    return 0;
+}

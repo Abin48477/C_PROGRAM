@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    int *p;
+
+    p = &num;  // p stores the address of num
+
+    printf("num = %d\n", num);      // shows value 10
+    printf("&num = %p\n", &num);    // shows address of num
+    printf("p = %p\n", p);          // same as &num
+    printf("*p = %d\n", *p);        // value at address p (which is 10)
+
+    return 0;
+}
